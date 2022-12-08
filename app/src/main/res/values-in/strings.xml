@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LanguageDemo</string>
+    <string name="show_language_switch">Tampilkan Dialog ganti bahasa</string>
+    <string name="show_custom_language">Tampilkan daftar ganti bahasa sesuai pesanan</string>
+
+    <!--多语言SDK内部资源-->
+    <string name="language_select_language">Bahas</string>
+    <string name="language_select_language_desc">Silakan pilih bahasa yang ingin anda ubah</string>
+    <string name="language_follow_system">Sistemname</string>
+    <string name="language_cancel">Batal</string>
+    <string name="language_confirm">Konfirmasi</string>
+</resources>

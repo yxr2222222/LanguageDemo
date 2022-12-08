@@ -4,6 +4,7 @@
     package="com.yxr.languagedemo">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CustomLanguageSwitchActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LanguageDemo</string>
+    <string name="show_language_switch">Mostrar diálogo cambiar de idioma</string>
+    <string name="show_custom_language">Muestra una lista de cambios de idioma personalizados</string>
+
+    <!--多语言SDK内部资源-->
+    <string name="language_select_language">Idioma</string>
+    <string name="language_select_language_desc">Por favor seleccione el idioma que desea modificar</string>
+    <string name="language_follow_system">Sistema</string>
+    <string name="language_cancel">Cancelar</string>
+    <string name="language_confirm">Confirmar</string>
+</resources>

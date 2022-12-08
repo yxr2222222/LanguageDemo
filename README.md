@@ -43,7 +43,7 @@
                 .addCustomLanguage(new CustomLanguage(new Locale("es"), "Español"))
                 .addCustomLanguage(new CustomLanguage(new Locale("in"), "Indonesia"))
                 .build());
-  // 设置语言切换监听
+  // 设置语言切换监听，isInnerNotifyLanguageChanged为false时可自己处理语言切换逻辑
   LanguageManager.getInstance().setOnLanguageChangedListener(new OnLanguageChangedListener() {
       @Override
       public void onLanguageChanged(@NonNull LanguageLocale languageLocale) {
@@ -52,18 +52,19 @@
   });
   ```
 
-* 展示多语言切换弹框
+* 使用说明
 
   ```java
   LanguageManager.getInstance().showLanguageSelectorDialog(this);
-  ```
   
-* 多语言转换
-
-  ```java
+  // isInnerNotifyLanguageChanged为flase时可Activity在onCreate时调用，试当前Activity的内容切换为当前语言
+  LanguageManager.getInstance().changLanguage(activity);
+  
   // 获取当前语言
   LanguageLocale languageLocale = LanguageManager.getInstance().getCurrLanguage();
   
+  // 获取配置的多语言列表，第二参数指是否给当前语言做标记
+  LanguageManager.getInstance().getLanguageList(context, true);
   ```
 
 #### 3. 其他

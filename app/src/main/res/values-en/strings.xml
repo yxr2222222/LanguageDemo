@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LanguageDemo</string>
+    <string name="show_language_switch">Show Language Switch Dialog</string>
+    <string name="show_custom_language">Displays a list of custom language switches</string>
+</resources>
