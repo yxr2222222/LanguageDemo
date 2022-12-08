@@ -15,7 +15,7 @@
 * Module中依赖集成
 
   ```java
-  implementation 'com.github.yxr2222222:LanguageDemo:v1.0.0.202212081'
+  implementation 'com.github.yxr2222222:LanguageDemo:v1.0.1.202212081'
   ```
 
 * 初始化和设置监听，建议在Application onCreate()中进行，初始化完成切换到上次选择的系统，没有选择过默认为跟随系统
