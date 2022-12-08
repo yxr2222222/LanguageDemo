@@ -1,20 +1,7 @@
 plugins {
     id 'com.android.library'
-    id 'maven'
+    id 'maven-publish'
 }
-
-// TODO: 2020/3/15 有修改记得更新这几个值，每次发版必须升级前三位中的一位
-def IS_RELEASE = true
-def SDK_VERSION_NAME = "1.2.3.202212051"
-def SDK_VERSION_CODE = 202212051
-
-// Maven仓库的URL
-def MAVEN_REPO_RELEASE_URL = 'http://101.37.191.20:9091/repository/maven-releases/'
-def MAVEN_REPO_SNAPSHOT_URL = 'http://101.37.191.20:9091/repository/maven-snapshots/'
-// 登录nexus ossde的用户名
-def NEXUS_USERNAME = 'deployment'
-// 登录nexus oss的密码
-def NEXUS_PASSWORD = 'ecook123456'
 
 android {
     compileSdkVersion 30
@@ -23,8 +10,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode SDK_VERSION_CODE
-        versionName SDK_VERSION_NAME
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -40,41 +27,20 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    android.libraryVariants.all { variant ->
-        variant.outputs.all {
-            outputFileName = "RecipeSearchSdk-" + "${defaultConfig.versionName}" + '.aar'
+    afterEvaluate {
+        publishing {
+            publications {
+                release(MavenPublication) {
+                    from components.release
+                }
+            }
         }
     }
 }
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'com.android.support:appcompat-v7:28.0.0'
+    compileOnly 'androidx.appcompat:appcompat:1.4.2'
+    compileOnly 'com.google.android.material:material:1.6.1'
     compileOnly 'com.google.code.gson:gson:2.8.6'
-    compileOnly 'com.android.support:recyclerview-v7:28.0.0'
-}
-
-
-
-uploadArchives {
-    configuration = configurations.archives
-    repositories {
-        mavenDeployer {
-
-            snapshotRepository(url: MAVEN_REPO_SNAPSHOT_URL) {
-                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
-            }
-            repository(url: MAVEN_REPO_RELEASE_URL) {
-                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
-            }
-            pom.project {
-                version SDK_VERSION_NAME
-                artifactId IS_RELEASE ? 'language-android' : 'language-android-alpha'
-                groupId 'com.admobile'
-                packaging 'aar'
-                description "多语言切换SDK"
-            }
-        }
-    }
 }

@@ -6,9 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+
+import androidx.annotation.NonNull;
 
 import com.yxr.language.callback.LifecycleCallbacks;
 import com.yxr.language.callback.OnLanguageChangedListener;

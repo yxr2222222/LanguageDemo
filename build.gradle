@@ -2,26 +2,25 @@
 buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.0"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
     }
     repositories {
+        // 阿里云仓库
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        // jitpack仓库
         maven { url 'https://jitpack.io' }
-
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases' }
     }
 }
 
 allprojects {
     repositories {
+        // 阿里云仓库
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        // jitpack仓库
         maven { url 'https://jitpack.io' }
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases' }
     }
 }
 
