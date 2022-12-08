@@ -1,0 +1,7 @@
+<resources>
+    <string name="language_select_language">Language</string>
+    <string name="language_select_language_desc">Please select the language you want to modify</string>
+    <string name="language_follow_system">System</string>
+    <string name="language_cancel">Cancel</string>
+    <string name="language_confirm">Confirm</string>
+</resources>

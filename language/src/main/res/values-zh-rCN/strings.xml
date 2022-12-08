@@ -1,0 +1,7 @@
+<resources>
+    <string name="language_select_language">选择语言</string>
+    <string name="language_select_language_desc">请选择你要修改的语言</string>
+    <string name="language_follow_system">跟随系统</string>
+    <string name="language_cancel">取消</string>
+    <string name="language_confirm">确认</string>
+</resources>

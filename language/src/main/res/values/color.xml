@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="language_white">#ffffff</color>
+    <color name="language_black">#000000</color>
+    <color name="language_gray_999999">#999999</color>
+    <color name="language_gray_50000000">#50000000</color>
+    <color name="language_gray_f6f6f6">#f6f6f6</color>
+    <color name="language_gray_ededed">#ededed</color>
+    <color name="language_gray_292929">#292929</color>
+    <color name="language_orange_feb34d">#feb34d</color>
+</resources>

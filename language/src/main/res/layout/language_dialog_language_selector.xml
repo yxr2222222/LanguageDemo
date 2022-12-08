@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/language_shape_white_top_radius10"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/language_dp_20"
+    android:paddingStart="@dimen/language_dp_16"
+    android:paddingEnd="@dimen/language_dp_16"
+    android:paddingBottom="@dimen/language_dp_20">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language_select_language"
+        android:textColor="@color/language_black"
+        android:textSize="@dimen/language_sp_20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language_select_language_desc"
+        android:textColor="@color/language_gray_999999"
+        android:textSize="@dimen/language_sp_16"
+        android:layout_marginTop="@dimen/language_dp_10"
+        android:layout_below="@+id/tvTitle"/>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/language_dp_20"
+        android:layout_height="@dimen/language_dp_20"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/language_ic_close" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginTop="@dimen/language_dp_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/language_dp_44"
+        android:layout_alignBottom="@+id/recyclerView"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="@dimen/language_dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/language_gray_999999"
+            android:background="@drawable/language_shape_gray_ededed_radius10"
+            android:text="@string/language_cancel"
+            android:textSize="@dimen/language_sp_16" />
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="@dimen/language_dp_0"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/language_dp_24"
+            android:layout_weight="1"
+            android:textColor="@color/language_black"
+            android:background="@drawable/language_shape_orange_feb34d_radius10"
+            android:text="@string/language_confirm"
+            android:textSize="@dimen/language_sp_16" />
+    </LinearLayout>
+</RelativeLayout>

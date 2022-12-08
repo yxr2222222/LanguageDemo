@@ -1,0 +1,3 @@
+rootProject.name = "LanguageDemo"
+include ':app'
+include ':language'

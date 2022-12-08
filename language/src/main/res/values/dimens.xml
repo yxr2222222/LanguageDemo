@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="language_dp_0">0dp</dimen>
+    <dimen name="language_dp_0_5">0.5dp</dimen>
+    <dimen name="language_dp_1">1dp</dimen>
+    <dimen name="language_dp_2">2dp</dimen>
+    <dimen name="language_dp_4">4dp</dimen>
+    <dimen name="language_dp_6">6dp</dimen>
+    <dimen name="language_dp_8">8dp</dimen>
+    <dimen name="language_dp_9">9dp</dimen>
+    <dimen name="language_dp_10">10dp</dimen>
+    <dimen name="language_dp_12">12dp</dimen>
+    <dimen name="language_dp_14">14dp</dimen>
+    <dimen name="language_dp_16">16dp</dimen>
+    <dimen name="language_dp_20">20dp</dimen>
+    <dimen name="language_dp_22">22dp</dimen>
+    <dimen name="language_dp_23">23dp</dimen>
+    <dimen name="language_dp_24">24dp</dimen>
+    <dimen name="language_dp_32">32dp</dimen>
+    <dimen name="language_dp_40">40dp</dimen>
+    <dimen name="language_dp_42">42dp</dimen>
+    <dimen name="language_dp_44">44dp</dimen>
+    <dimen name="language_dp_48">48dp</dimen>
+    <dimen name="language_dp_64">64dp</dimen>
+    <dimen name="language_dp_110">110dp</dimen>
+    <dimen name="language_dp_120">120dp</dimen>
+    <dimen name="language_dp_154">154dp</dimen>
+    <dimen name="language_dp_295">295dp</dimen>
+
+    <dimen name="language_sp_12">12sp</dimen>
+    <dimen name="language_sp_14">14sp</dimen>
+    <dimen name="language_sp_15">15sp</dimen>
+    <dimen name="language_sp_16">16sp</dimen>
+    <dimen name="language_sp_18">18sp</dimen>
+    <dimen name="language_sp_20">20sp</dimen>
+</resources>
