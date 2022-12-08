@@ -6,10 +6,16 @@
 
 #### 2. 如何使用
 
-* 依赖集成
+* 根Gradle中添加
 
   ```java
-  api 'com.admobile:language-android:1.0.0.202212081'
+  maven { url 'https://jitpack.io' }
+  ```
+
+* Module中依赖集成
+
+  ```java
+  implementation 'com.github.yxr2222222:LanguageDemo:v1.0.0.202212081'
   ```
 
 * 初始化和设置监听，建议在Application onCreate()中进行，初始化完成切换到上次选择的系统，没有选择过默认为跟随系统
@@ -57,7 +63,7 @@
   ```java
   // 获取当前语言
   LanguageLocale languageLocale = LanguageManager.getInstance().getCurrLanguage();
-
+  
   ```
 
 #### 3. 其他
